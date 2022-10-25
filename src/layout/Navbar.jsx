@@ -30,7 +30,7 @@ const Navbar = () => {
     >
       <Box>
         <Button component={Link} to="/" sx={buttonStyle} disableRipple>
-          Francisco Rey
+          Portafolio
         </Button>
       </Box>
       <Box>

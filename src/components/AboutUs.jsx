@@ -9,6 +9,7 @@ const AboutUs = () => {
         fontWeight="700"
         fontSize={"24px"}
         textAlign="center"
+        color="primary.dark"
       >
         Sobre Mi
       </Typography>
@@ -20,6 +21,28 @@ const AboutUs = () => {
         elit. Fuga amet magnam ab cumque placeat mollitia pariatur corrupti
         tenetur minus aliquam expedita dolore suscipit, tempora error quis nihil
         laboriosam nisi asperiores daddas asdsadasdasd dsad nisi asperiores.
+      </Typography>
+      <Typography
+        textTransform={"uppercase"}
+        fontWeight="700"
+        fontSize={"24px"}
+        textAlign="center"
+        color="primary.dark"
+        borderBottom={"2px solid red"}
+        mt={4}
+      >
+        Datos
+      </Typography>
+      <Typography
+        textTransform={"uppercase"}
+        fontWeight="700"
+        fontSize={"24px"}
+        textAlign="center"
+        color="primary.dark"
+        borderBottom={"2px solid red"}
+        mt={4}
+      >
+        Etc
       </Typography>
     </Stack>
   );

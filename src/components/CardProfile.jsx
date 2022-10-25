@@ -11,34 +11,65 @@ import {
 
 const CardProfile = () => {
   return (
-    <Card
-      sx={{
-        padding: "1.3rem",
-        width: "35rem",
-        display: "flex",
-        justifyContent: "space-evenly",
-        alignItems: "center",
-        border: "2px solid",
-        borderColor: "primary.main",
-      }}
-    >
-      <Avatar
+    <Stack direction={"row"} justifyContent="space-between">
+      <Card
         sx={{
-          width: "90px",
-          height: "90px",
+          padding: "9px",
+          width: "25rem",
+          display: "flex",
+          justifyContent: "space-evenly",
+          alignItems: "center",
+          border: "2px solid",
+          borderColor: "terciary.main",
         }}
-        src="src\img\main-img.jpg"
-        alt="algo"
-      />
-      <Stack>
-        <Typography fontWeight={"700"} fontSize="28px">
-          Desarrollador Frontend
-        </Typography>
-        <Typography color={"primary.main"} fontWeight={"400"} fontSize="28px">
-          Web developer
-        </Typography>
-      </Stack>
-    </Card>
+      >
+        <Stack>
+          <Typography
+            color={"terciary.dark"}
+            fontWeight={"700"}
+            fontSize="26px"
+          >
+            Desarrollador Frontend
+          </Typography>
+          <Typography
+            color={"terciary.dark"}
+            fontWeight={"400"}
+            fontSize="24px"
+          >
+            Web developer
+          </Typography>
+        </Stack>
+      </Card>
+      <Card
+        sx={{
+          padding: "9px",
+          width: "25rem",
+          display: "flex",
+          justifyContent: "space-evenly",
+          alignItems: "center",
+          border: "2px solid",
+          borderColor: "primary.dark",
+        }}
+      >
+        <Avatar
+          sx={{
+            width: "100px",
+            height: "100px",
+          }}
+          src="src\img\fotocv2.jpeg"
+          alt="algo"
+        />
+        <Stack>
+          <Typography
+            color={"secondary.main"}
+            fontWeight={"700"}
+            fontSize="26px"
+          >
+            Francisco Rey
+          </Typography>
+        </Stack>
+      </Card>
+    </Stack>
   );
 };
 

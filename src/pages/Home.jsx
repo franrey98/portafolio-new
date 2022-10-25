@@ -15,8 +15,17 @@ const Home = () => {
       </div>
       <Stack maxWidth={"1000px"} margin="0 auto">
         <AboutUs />
-        <Technology />
+      </Stack>
+      <Stack sx={{ backgroundColor: "black" }} height="25rem" mt={4}>
+        <Stack maxWidth={"1000px"} margin="0 auto">
+          <Technology />
+        </Stack>
+      </Stack>
+      <Stack maxWidth={"1000px"} margin="0 auto">
         <Projects />
+      </Stack>
+
+      <Stack maxWidth={"1000px"} margin="0 auto">
         <Contact />
       </Stack>
     </Stack>

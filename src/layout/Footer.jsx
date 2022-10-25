@@ -8,7 +8,7 @@ const Footer = () => {
       <Stack
         width="100%"
         height="130px"
-        sx={{ backgroundColor: "primary.main" }}
+        sx={{ backgroundColor: "black" }}
         py="10px"
         px="40px"
         justifyContent="center"
