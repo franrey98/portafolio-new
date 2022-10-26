@@ -28,6 +28,7 @@ const imgTech = [
     img: imggit,
   },
 ];
+
 const Technology = () => {
   return (
     <Stack>
@@ -40,20 +41,25 @@ const Technology = () => {
       >
         Tecnologias
       </Typography>
-      <Typography color="white" mt={"20px"}>
+      <Typography color="white" mt={"40px"}>
         Estas son las herramientas con las que trabaje y que mas utilizo
         diariamente
       </Typography>
       <Box
         sx={{
           padding: "1rem",
-          backgroundColor: "#000627",
+          backgroundColor: "#1b1b1b",
           borderRadius: "1rem",
-          marginTop: "2rem",
+          marginTop: "4rem",
           width: "1000px",
         }}
       >
-        <Stack direction={"row"} gap="4rem" padding={"8px"}>
+        <Stack
+          direction={"row"}
+          gap="4rem"
+          padding={"8px"}
+          justifyContent="space-between"
+        >
           <CardImg imgTech={imgTech[1]} />
           <CardImg imgTech={imgTech[0]} />
           <CardImg imgTech={imgTech[2]} />

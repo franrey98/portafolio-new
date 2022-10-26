@@ -1,18 +1,39 @@
-import { Button, Stack } from "@mui/material";
+import { Box, Button, Stack, Typography } from "@mui/material";
 import React from "react";
 
 const ProjectCard = ({ infoCard }) => {
   return (
-    <Stack>
-      <Stack sx={{ border: "1px solid #282222", padding: "5px" }}>
-        <img style={{ width: "100%" }} src={infoCard?.img} alt="native" />
+    <Stack
+      sx={{
+        width: "450px",
+        height: "300px",
+      }}
+      alignItems="center"
+      gap={3}
+    >
+      <Typography
+        fontWeight={"700"}
+        textTransform="uppercase"
+        fontSize={"24px"}
+      >
+        App {infoCard?.name}
+      </Typography>
+      <Stack sx={{ padding: "0px" }}>
+        <img
+          style={{ width: "100%", height: "100%" }}
+          src={infoCard?.img}
+          alt="native"
+        />
       </Stack>
-      <Stack direction={"row"} justifyContent="center">
-        <Button>
-          <a href={infoCard?.github}>github</a>
+      <Typography color={"primary.dark"} fontWeight={"400"}>
+        {infoCard?.tech}
+      </Typography>
+      <Stack direction={"row"} gap={"14px"} justifyContent="center">
+        <Button variant="contained" href={infoCard?.github}>
+          Github
         </Button>
-        <Button>
-          <a href={infoCard?.url}>pagina</a>
+        <Button variant="contained" href={infoCard?.url}>
+          Visitar
         </Button>
       </Stack>
     </Stack>

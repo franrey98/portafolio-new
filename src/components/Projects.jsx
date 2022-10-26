@@ -8,24 +8,25 @@ import native from "../img/native.png";
 
 const infoCard = [
   {
+    name: "Pet Finder",
     img: petapp,
+    tech: "REACT - MUI - REDUX TOOLKIT",
     github: "https://github.com/franrey98/S4-11-ft-mern",
     url: "https://petfinder-phi.vercel.app/",
   },
   {
+    name: "E-commerce",
     img: reactapp,
+    tech: "REACT - TAILWIND - CONTEXT",
     github: "https://github.com/franrey98/rey-app",
     url: "https://ecommerce-deportivo.netlify.app/",
   },
   {
+    name: "Todo List",
     img: todoapp,
+    tech: "HTML - CSS - JAVASCRIPT",
     github: "https://github.com/franrey98/Proyecto-para-portafolio-2",
     url: "https://apptodorey.netlify.app/",
-  },
-  {
-    img: native,
-    github: "https://github.com/franrey98/c6-30-ft-pern-1",
-    url: "https://github.com/franrey98/c6-30-ft-pern-1",
   },
 ];
 
@@ -41,19 +42,18 @@ const Projects = () => {
       >
         Proyectos
       </Typography>
-      <Typography>
+      <Typography mt={"1.5rem"}>
         Diversos trabajos tanto grupales como personales que he realizado hasta
         la fecha
       </Typography>
-      <Stack alignItems={"center"}>
-        <Stack direction={"row"}>
+      <Stack alignItems={"center"} mt={"3rem"}>
+        <Stack direction={"row"} gap={"6rem"}>
           <ProjectCard infoCard={infoCard[0]} />
-          <ProjectCard infoCard={infoCard[1]} />
-        </Stack>
-        <Stack direction={"row"}>
           <ProjectCard infoCard={infoCard[2]} />
-          <ProjectCard infoCard={infoCard[3]} />
         </Stack>
+        <Box mt={"8rem"}>
+          <ProjectCard infoCard={infoCard[1]} />
+        </Box>
       </Stack>
     </Stack>
   );

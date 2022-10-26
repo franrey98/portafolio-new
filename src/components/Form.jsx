@@ -29,7 +29,7 @@ const Form = () => {
           type="text-area"
           aria-describedby="msg-helper"
         />
-        <Button variant="outlined" sx={{ marginTop: "20px" }}>
+        <Button variant="contained" sx={{ marginTop: "20px" }}>
           Enviar Mensaje
         </Button>
       </FormControl>
