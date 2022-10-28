@@ -17,8 +17,8 @@ const AboutUs = () => {
         mt={2}
         lineHeight={1.8}
         textAlign="center"
-        mr={"220px"}
-        ml={"220px"}
+        mr={{ xs: "0px", md: "190px" }}
+        ml={{ xs: "0px", md: "190px" }}
       >
         Soy un desarrollador Front End, que arranco en febrero de 2021 como
         autodidacta. Probando distintos cursos, descubrí que esto era lo que me
@@ -43,7 +43,7 @@ const AboutUs = () => {
       </Typography>
       <Stack
         direction={"row"}
-        gap="2rem"
+        gap={{ xs: "0", md: "2rem" }}
         justifyContent={"space-between"}
         mt="2rem"
       >
@@ -54,7 +54,7 @@ const AboutUs = () => {
             color="primary.dark"
             textAlign={"center"}
           >
-            Años
+            ¿Años?
           </Typography>
           <Typography
             fontWeight={"700"}
@@ -72,7 +72,7 @@ const AboutUs = () => {
             color="primary.dark"
             textAlign={"center"}
           >
-            Lugar de Nacimiento y Residencia actual
+            ¿Lugar de Nacimiento y Residencia actual?
           </Typography>
           <Typography
             fontWeight={"700"}
@@ -84,7 +84,12 @@ const AboutUs = () => {
           </Typography>
         </Stack>
         <Stack>
-          <Typography fontWeight={"700"} fontSize="22px" color="primary.dark">
+          <Typography
+            textAlign={"center"}
+            fontWeight={"700"}
+            fontSize="22px"
+            color="primary.dark"
+          >
             ¿Disponibilidad Horaria?
           </Typography>
           <Typography

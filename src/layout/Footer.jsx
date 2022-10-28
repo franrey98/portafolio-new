@@ -13,7 +13,11 @@ const Footer = () => {
         px="40px"
         justifyContent="center"
       >
-        <Stack direction="row" justifyContent="space-between" height="100%">
+        <Stack
+          direction={{ xs: "column", sm: "row" }}
+          justifyContent={{ xs: "space-evenly", sm: "space-between" }}
+          height="100%"
+        >
           <Typography
             fontSize="16px"
             fontWeight="light"

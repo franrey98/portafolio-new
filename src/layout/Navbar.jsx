@@ -26,7 +26,7 @@ const Navbar = () => {
       maxWidth={"1000px"}
       margin="0 auto"
       flexDirection="row"
-      gap={"15rem"}
+      gap={{ xs: "2rem", md: "15rem" }}
     >
       <Box>
         <Button component={Link} to="/" sx={buttonStyle} disableRipple>

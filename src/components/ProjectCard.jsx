@@ -5,11 +5,12 @@ const ProjectCard = ({ infoCard }) => {
   return (
     <Stack
       sx={{
-        width: "450px",
-        height: "300px",
+        width: "100%",
+        height: "100%",
       }}
       alignItems="center"
       gap={3}
+      mt={{ xs: "2rem" }}
     >
       <Typography
         fontWeight={"700"}
@@ -20,9 +21,9 @@ const ProjectCard = ({ infoCard }) => {
       </Typography>
       <Stack sx={{ padding: "0px" }}>
         <img
-          style={{ width: "100%", height: "100%" }}
+          style={{ width: "100%", height: "180px" }}
           src={infoCard?.img}
-          alt="native"
+          alt="imgprojects"
         />
       </Stack>
       <Typography color={"primary.dark"} fontWeight={"400"}>

@@ -12,7 +12,11 @@ import { motion } from "framer-motion";
 
 const CardProfile = () => {
   return (
-    <Stack direction={"row"} justifyContent="space-between">
+    <Stack
+      direction={{ md: "column", lg: "row" }}
+      justifyContent="space-between"
+      gap={{ xs: "1rem" }}
+    >
       <motion.div
         whileHover={{ scale: [null, 1.1, 1.1] }}
         transition={{ duration: 0.3 }}
@@ -76,6 +80,7 @@ const CardProfile = () => {
               color={"terciary.dark"}
               fontWeight={"400"}
               fontSize="30px"
+              textAlign={"center"}
             >
               Web developer
             </Typography>

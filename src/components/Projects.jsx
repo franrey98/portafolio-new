@@ -46,14 +46,10 @@ const Projects = () => {
         Diversos trabajos tanto grupales como personales que he realizado hasta
         la fecha
       </Typography>
-      <Stack alignItems={"center"} mt={"3rem"}>
-        <Stack direction={"row"} gap={"6rem"}>
-          <ProjectCard infoCard={infoCard[0]} />
-          <ProjectCard infoCard={infoCard[2]} />
-        </Stack>
-        <Box mt={"8rem"}>
-          <ProjectCard infoCard={infoCard[1]} />
-        </Box>
+      <Stack mt={"2rem"} direction={{ sx: "column", md: "row" }} gap={"1rem"}>
+        <ProjectCard infoCard={infoCard[0]} />
+        <ProjectCard infoCard={infoCard[2]} />
+        <ProjectCard infoCard={infoCard[1]} />
       </Stack>
     </Stack>
   );

@@ -13,8 +13,8 @@ import {
 
 const Form = () => {
   return (
-    <Stack>
-      <FormControl sx={{ width: "30rem", height: "5rem" }}>
+    <Stack width={{ xs: "20rem", md: "30rem" }} maxWidth={{ xs: "100%" }}>
+      <FormControl sx={{ height: "5rem" }}>
         <InputLabel htmlFor="">Nombre</InputLabel>
         <Input id="nombre" type="nombre" aria-describedby="nombre-helper" />
       </FormControl>

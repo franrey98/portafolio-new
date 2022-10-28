@@ -55,10 +55,8 @@ const Contact = () => {
         <Stack gap="2rem" alignItems={"center"}>
           <Box>
             <Typography
-              sx={{
-                marginRight: "220px",
-                marginLeft: "220px",
-              }}
+              marginRight={{ xs: "0", md: "220px" }}
+              marginLeft={{ xs: "0", md: "220px" }}
               textAlign="center"
               mt={"15px"}
             >
