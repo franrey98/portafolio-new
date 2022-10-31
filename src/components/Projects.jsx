@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Stack, Typography, Box } from "@mui/material";
+import { Grid, Stack, Typography, Box, useMediaQuery } from "@mui/material";
 import ProjectCard from "./ProjectCard";
 import petapp from "../img/petapp.png";
 import reactapp from "../img/reactapp.png";
@@ -47,8 +47,8 @@ const Projects = () => {
         la fecha
       </Typography>
       <Stack mt={"2rem"} direction={{ sx: "column", md: "row" }} gap={"1rem"}>
-        <ProjectCard infoCard={infoCard[0]} />
         <ProjectCard infoCard={infoCard[2]} />
+        <ProjectCard infoCard={infoCard[0]} />
         <ProjectCard infoCard={infoCard[1]} />
       </Stack>
     </Stack>

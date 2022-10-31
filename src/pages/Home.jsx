@@ -24,11 +24,16 @@ const Home = () => {
       >
         <AboutUs />
       </Stack>
-      <Stack sx={{ backgroundColor: "black" }} height="35rem" mt={4}>
-        <Stack maxWidth={{ xs: "350px", md: "1000px" }} margin="0 auto">
+      <Box sx={{ backgroundColor: "black" }}>
+        <Stack
+          maxWidth={{ xs: "350px", sm: "600px", md: "1000px" }}
+          margin="0 auto"
+          height="35rem"
+          mt={4}
+        >
           <Technology />
         </Stack>
-      </Stack>
+      </Box>
       <Stack
         maxWidth={{ xs: "350px", sm: "600px", md: "1000px" }}
         margin="0 auto"

@@ -6,6 +6,7 @@ import {
   CardContent,
   CardMedia,
   Card,
+  Box,
 } from "@mui/material";
 import { motion } from "framer-motion";
 const CardImg = ({ imgTech }) => {
@@ -25,13 +26,13 @@ const CardImg = ({ imgTech }) => {
           />
         </CardActionArea>
       </Card> */}
-      <div>
+      <Box>
         <img
           src={imgTech.img}
           style={{ maxWidth: "6rem", height: "6rem", objectFit: "contain" }}
           alt="img"
         />
-      </div>
+      </Box>
     </motion.div>
   );
 };

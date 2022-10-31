@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, Grid, Stack, Typography, useMediaQuery } from "@mui/material";
 import CardImg from "./CardImg";
 import imgcss from "../img/css.png";
 import imghtml from "../img/html.png";
@@ -30,6 +30,8 @@ const imgTech = [
 ];
 
 const Technology = () => {
+  const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down("md"));
+
   return (
     <Stack>
       <Typography
@@ -45,20 +47,13 @@ const Technology = () => {
         Estas son las herramientas con las que trabaje y que mas utilizo
         diariamente
       </Typography>
-      <Box
-        sx={{
-          padding: "1rem",
-          backgroundColor: "#1b1b1b",
-          borderRadius: "1rem",
-          marginTop: "4rem",
-          width: "1000px",
-        }}
-      >
+      {!isSmallScreen ? (
         <Stack
           direction={"row"}
           gap="4rem"
           padding={"8px"}
           justifyContent="space-between"
+          mt={"5rem"}
         >
           <CardImg imgTech={imgTech[1]} />
           <CardImg imgTech={imgTech[0]} />
@@ -67,7 +62,21 @@ const Technology = () => {
           <CardImg imgTech={imgTech[4]} />
           <CardImg imgTech={imgTech[5]} />
         </Stack>
-      </Box>
+      ) : (
+        <>
+          <Grid
+            container
+            gap="30px"
+            justifyContent={{ xs: "space-around", md: "center" }}
+          >
+            {imgTech.map((item, index) => (
+              <Grid key={index} mt={"2rem"} item>
+                <CardImg imgTech={item} />
+              </Grid>
+            ))}
+          </Grid>
+        </>
+      )}
     </Stack>
   );
 };

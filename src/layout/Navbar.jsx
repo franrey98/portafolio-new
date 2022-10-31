@@ -1,6 +1,7 @@
 import React from "react";
 import { Stack, Button, Box } from "@mui/material";
 import { Link } from "react-router-dom";
+import DrawerMenu from "../components/DrawerMenu";
 
 const buttonStyle = {
   fontSize: "22px",
@@ -28,12 +29,13 @@ const Navbar = () => {
       flexDirection="row"
       gap={{ xs: "2rem", md: "15rem" }}
     >
-      <Box>
+      <Stack direction={"row"} gap={"6rem"}>
         <Button component={Link} to="/" sx={buttonStyle} disableRipple>
           Portafolio
         </Button>
-      </Box>
-      <Box>
+        <DrawerMenu />
+      </Stack>
+      <Stack display={{ xs: "none", md: "flex" }} flexDirection={{ md: "row" }}>
         <Button component={Link} to="/aboutUs" sx={buttonStyle} disableRipple>
           Sobre Mi
         </Button>
@@ -51,7 +53,7 @@ const Navbar = () => {
         <Button component={Link} to="/contact" sx={buttonStyle} disableRipple>
           Contacto
         </Button>
-      </Box>
+      </Stack>
     </Stack>
   );
 };
