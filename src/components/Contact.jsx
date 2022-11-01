@@ -17,6 +17,7 @@ const Contact = () => {
   return (
     <>
       <Stack
+        id="contact"
         color={"primary.dark"}
         borderBottom={"3px solid"}
         direction={"row"}
@@ -37,6 +38,7 @@ const Contact = () => {
             color: "white",
           }}
           variant="contained"
+          href="https://onedrive.live.com/?cid=38E2E5E104DF5E08&id=38E2E5E104DF5E08%21109&parId=root&o=OneUp"
         >
           Ver
         </Button>

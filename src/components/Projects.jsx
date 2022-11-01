@@ -32,7 +32,7 @@ const infoCard = [
 
 const Projects = () => {
   return (
-    <Stack>
+    <Stack id="projects">
       <Typography
         textTransform={"uppercase"}
         fontWeight="700"

@@ -10,23 +10,20 @@ import {
 } from "@mui/material";
 import { motion } from "framer-motion";
 
-const CardProfile = () => {
+const CardResponsive = () => {
   return (
-    <Stack
-      direction={{ md: "column", lg: "row" }}
-      justifyContent="space-between"
-      gap={{ xs: "1rem" }}
-    >
+    <Stack mt={"3rem"} display={{ xs: "flex", md: "none" }}>
       <motion.div
         whileHover={{ scale: [null, 1.1, 1.1] }}
         transition={{ duration: 0.3 }}
       >
         <Card
           sx={{
-            padding: "9px",
+            padding: "5px",
             width: "100%",
-            height: "12rem",
+            height: "20rem",
             display: "flex",
+            flexDirection: "column",
             justifyContent: "space-evenly",
             alignItems: "center",
             border: "2px solid",
@@ -49,40 +46,12 @@ const CardProfile = () => {
             >
               Francisco Rey
             </Typography>
-          </Stack>
-        </Card>
-      </motion.div>
-      <motion.div
-        whileHover={{ scale: [null, 1.1, 1.1] }}
-        transition={{ duration: 0.3 }}
-      >
-        <Card
-          sx={{
-            padding: "9px",
-            width: "25rem",
-            height: "12rem",
-            display: "flex",
-            justifyContent: "space-evenly",
-            alignItems: "center",
-            border: "2px solid",
-            borderColor: "terciary.main",
-          }}
-        >
-          <Stack>
             <Typography
-              color={"terciary.dark"}
+              color={"terciary.light"}
               fontWeight={"700"}
               fontSize="34px"
             >
-              Desarrollador Frontend
-            </Typography>
-            <Typography
-              color={"terciary.dark"}
-              fontWeight={"400"}
-              fontSize="30px"
-              textAlign={"center"}
-            >
-              Web developer
+              Front End Developer
             </Typography>
           </Stack>
         </Card>
@@ -91,4 +60,4 @@ const CardProfile = () => {
   );
 };
 
-export default CardProfile;
+export default CardResponsive;

@@ -1,6 +1,7 @@
 import { Stack, Box } from "@mui/material";
 import AboutUs from "../components/AboutUs";
 import CardProfile from "../components/CardProfile";
+import CardResponsive from "../components/CardResponsive";
 import Contact from "../components/Contact";
 import Projects from "../components/Projects";
 import Technology from "../components/Technology";
@@ -12,12 +13,17 @@ const Home = () => {
         <Stack
           maxWidth={"1000px"}
           margin="0 auto"
+          marginTop={"1rem"}
           mt={{ lg: "4rem", md: "0" }}
           alignItems={{ xs: "center", lg: "stretch" }}
         >
-          <CardProfile />
+          <CardResponsive />
+          <Stack display={{ xs: "none", md: "flex" }}>
+            <CardProfile />
+          </Stack>
         </Stack>
       </div>
+
       <Stack
         maxWidth={{ md: "1000px", sm: "600px", xs: "350px" }}
         margin="0 auto"

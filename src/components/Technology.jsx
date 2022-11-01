@@ -33,7 +33,7 @@ const Technology = () => {
   const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down("md"));
 
   return (
-    <Stack>
+    <Stack id="technology">
       <Typography
         textTransform={"uppercase"}
         fontWeight="700"

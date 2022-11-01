@@ -3,7 +3,7 @@ import { Stack, Typography } from "@mui/material";
 
 const AboutUs = () => {
   return (
-    <Stack mt={6}>
+    <Stack id="aboutus" mt={6}>
       <Typography
         textTransform={"uppercase"}
         fontWeight="700"
