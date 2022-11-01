@@ -1,7 +1,19 @@
 .background {
   background-image: url("./img/main-img.jpg");
-  height: 50vh;
+  height: 70vh;
   background-position: 0px;
   background-size: cover;
   padding: 50px 0;
+}
+
+@media (min-width: 600px) {
+  .background {
+    height: 55vh;
+  }
+
+  @media (min-width: 1200px) {
+    .background {
+      height: 50vh;
+    }
+  }
 }

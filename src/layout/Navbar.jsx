@@ -1,6 +1,7 @@
-import React from "react";
-import { Stack, Button, Box } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Stack, Button, Box, AppBar } from "@mui/material";
+import { Link } from "react-scroll";
+import { Fragment } from "react";
+import DrawerMenu from "../components/DrawerMenu";
 
 const buttonStyle = {
   fontSize: "22px",
@@ -8,6 +9,7 @@ const buttonStyle = {
   textAlign: "center",
   textTransform: "uppercase",
   color: "black",
+  cursor: "pointer",
   "&:hover": {
     color: "primary.main",
     backgroundColor: "transparent",
@@ -21,38 +23,73 @@ const buttonStyle = {
 
 const Navbar = () => {
   return (
-    <Stack
-      mt={2}
-      maxWidth={"1000px"}
-      margin="0 auto"
-      flexDirection="row"
-      gap={"15rem"}
-    >
-      <Box>
-        <Button component={Link} to="/" sx={buttonStyle} disableRipple>
-          Francisco Rey
-        </Button>
-      </Box>
-      <Box>
-        <Button component={Link} to="/aboutUs" sx={buttonStyle} disableRipple>
-          Sobre Mi
-        </Button>
-        <Button
-          component={Link}
-          to="/technology"
-          sx={buttonStyle}
-          disableRipple
+    <div id="navbar">
+      <AppBar color="default">
+        <Stack
+          mt={2}
+          maxWidth={"1000px"}
+          margin="0 auto"
+          flexDirection="row"
+          gap={{ xs: "2rem", md: "15rem" }}
+          padding="7px"
         >
-          Tecnologias
-        </Button>
-        <Button component={Link} to="/projects" sx={buttonStyle} disableRipple>
-          Proyectos
-        </Button>
-        <Button component={Link} to="/contact" sx={buttonStyle} disableRipple>
-          Contacto
-        </Button>
-      </Box>
-    </Stack>
+          <Stack direction={"row"} gap={"6rem"} alignItems="center">
+            <Link
+              style={buttonStyle}
+              smooth={true}
+              offset={50}
+              duration={500}
+              to="navbar"
+            >
+              Portafolio
+            </Link>
+            <DrawerMenu />
+          </Stack>
+          <Stack
+            display={{ xs: "none", md: "flex" }}
+            flexDirection={{ md: "row" }}
+            gap="2rem"
+          >
+            <Link
+              style={buttonStyle}
+              smooth={true}
+              offset={50}
+              duration={500}
+              to="aboutus"
+            >
+              Sobre Mi
+            </Link>
+            <Link
+              style={buttonStyle}
+              smooth={true}
+              offset={50}
+              duration={500}
+              to="technology"
+            >
+              Tecnologias
+            </Link>
+            <Link
+              style={buttonStyle}
+              smooth={true}
+              offset={50}
+              duration={500}
+              to="projects"
+            >
+              Proyectos
+            </Link>
+            <Link
+              style={buttonStyle}
+              smooth={true}
+              offset={50}
+              duration={500}
+              to="contact"
+            >
+              Contacto
+            </Link>
+          </Stack>
+        </Stack>
+      </AppBar>
+    </div>
   );
 };
 

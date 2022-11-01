@@ -16,18 +16,18 @@ const Theme = ({ children }) => {
     palette: {
       primary: {
         main: "#0e577e",
-        dark: "#003049",
+        dark: "#174a66",
         light: "#64a0c0",
       },
       secondary: {
-        main: "#d13232",
-        dark: "#960000",
-        light: "#f07474",
+        main: "#c01717",
+        dark: "#4d0b0b",
+        light: "#da5f5f",
       },
       terciary: {
-        main: "#FCBF49",
-        dark: "#e49800",
-        light: "#f3c770",
+        main: "#690672",
+        dark: "#750370",
+        light: "#a73a9d",
       },
     },
     typography: {

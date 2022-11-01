@@ -8,16 +8,15 @@ const Footer = () => {
       <Stack
         width="100%"
         height="130px"
-        sx={{ backgroundColor: "primary.main" }}
+        sx={{ backgroundColor: "black" }}
         py="10px"
         px="40px"
         justifyContent="center"
       >
         <Stack
-          direction="row"
-          justifyContent="space-between"
+          direction={{ xs: "column", sm: "row" }}
+          justifyContent={{ xs: "space-evenly", sm: "space-between" }}
           height="100%"
-          sx={{ borderTop: "3px solid #FFF" }}
         >
           <Typography
             fontSize="16px"
@@ -46,18 +45,6 @@ const Footer = () => {
             </a>
           </Stack>
         </Stack>
-        <Link
-          href="#"
-          target="_blank"
-          sx={{
-            fontSize: "12px",
-            color: "white",
-            margin: "auto",
-            opacity: "50%",
-          }}
-        >
-          Repository on GitHub
-        </Link>
       </Stack>
     </Stack>
   );
