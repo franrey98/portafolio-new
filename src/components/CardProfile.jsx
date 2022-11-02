@@ -31,6 +31,7 @@ const CardProfile = () => {
             alignItems: "center",
             border: "2px solid",
             borderColor: "primary.dark",
+            gap: "1rem",
           }}
         >
           <Avatar

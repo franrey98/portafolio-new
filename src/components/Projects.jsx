@@ -28,6 +28,13 @@ const infoCard = [
     github: "https://github.com/franrey98/Proyecto-para-portafolio-2",
     url: "https://apptodorey.netlify.app/",
   },
+  {
+    name: "Quickly",
+    img: native,
+    tech: "REACT NATIVE - EXPO ",
+    github: "https://github.com/franrey98/c6-30-ft-pern-1",
+    url: "https://github.com/franrey98/c6-30-ft-pern-1",
+  },
 ];
 
 const Projects = () => {
@@ -39,18 +46,28 @@ const Projects = () => {
         fontSize={"24px"}
         mt={6}
         color="primary.main"
+        borderBottom={"4px solid"}
       >
         Proyectos
       </Typography>
-      <Typography mt={"1.5rem"}>
+      <Typography fontWeight="400" fontSize={"20px"} mt={"1.5rem"}>
         Diversos trabajos tanto grupales como personales que he realizado hasta
-        la fecha
+        la fecha:
       </Typography>
-      <Stack mt={"2rem"} direction={{ sx: "column", md: "row" }} gap={"1rem"}>
-        <ProjectCard infoCard={infoCard[2]} />
-        <ProjectCard infoCard={infoCard[0]} />
-        <ProjectCard infoCard={infoCard[1]} />
-      </Stack>
+      <Grid container justifyContent={"space-around"} gap="1rem">
+        <Grid item>
+          <ProjectCard infoCard={infoCard[2]} />
+        </Grid>
+        <Grid item>
+          <ProjectCard infoCard={infoCard[0]} />
+        </Grid>
+        <Grid item>
+          <ProjectCard infoCard={infoCard[1]} />
+        </Grid>
+        <Grid item>
+          <ProjectCard infoCard={infoCard[3]} />
+        </Grid>
+      </Grid>
     </Stack>
   );
 };
