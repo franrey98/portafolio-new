@@ -16,17 +16,18 @@ const ProjectCard = ({ infoCard }) => {
         fontWeight={"700"}
         textTransform="uppercase"
         fontSize={"24px"}
+        color="primary.main"
       >
-        App {infoCard?.name}
+        {infoCard?.name} App
       </Typography>
       <Stack sx={{ padding: "0px" }}>
         <img
-          style={{ width: "100%", height: "180px" }}
+          style={{ width: "380px", height: "180px" }}
           src={infoCard?.img}
           alt="imgprojects"
         />
       </Stack>
-      <Typography color={"primary.dark"} fontWeight={"400"}>
+      <Typography color={"primary.dark"} fontWeight={"600"}>
         {infoCard?.tech}
       </Typography>
       <Stack direction={"row"} gap={"14px"} justifyContent="center">

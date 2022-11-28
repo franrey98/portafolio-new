@@ -9,9 +9,11 @@ import {
   Stack,
   TextField,
   Typography,
+  Box,
 } from "@mui/material";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
+import Alert from "./Alert";
 
 const Form = () => {
   const {
@@ -19,20 +21,6 @@ const Form = () => {
     formState: { errors },
     handleSubmit,
   } = useForm();
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-
-  //   emailjs
-  //     .sendForm(
-  //       import.meta.env.VITE_APP_SERVICE_ID,
-  //       import.meta.env.VITE_APP_TEMPLATE_CONTACT_FORM_ID,
-  //       e.values,
-  //       import.meta.env.VITE_APP_USER_ID
-  //     )
-  //     .then((response) => console.log(response))
-  //     .catch((error) => console.log(error));
-  // };
 
   const form = useRef();
 
@@ -50,10 +38,14 @@ const Form = () => {
 
   return (
     <Stack width={{ xs: "20rem", md: "30rem" }} maxWidth={{ xs: "100%" }}>
-      <form ref={form} onSubmit={handleSubmit(submitEmail)}>
-        <div>
-          <label>Nombre</label>
-          <input
+      <form
+        ref={form}
+        onSubmit={handleSubmit(submitEmail)}
+        style={{ display: "flex", flexDirection: "column" }}
+      >
+        <FormControl sx={{ height: "5rem" }}>
+          <InputLabel>Nombre</InputLabel>
+          <Input
             type="text"
             name="name"
             {...register("name", {
@@ -62,55 +54,53 @@ const Form = () => {
               maxLength: "15",
             })}
           />
-          {errors.name?.type === "required" && <p>El nombre es requerido</p>}
-        </div>
-        <div>
-          <label>Email</label>
-          <input
+          {errors.name?.type === "required" && (
+            <Alert>{"El nombre es requerido!"}</Alert>
+          )}
+          {errors.name?.type === "minLength" && (
+            <Alert>{"El nombre es demasiado corto!"}</Alert>
+          )}
+        </FormControl>
+        <FormControl>
+          <InputLabel>Email</InputLabel>
+          <Input
             type="email"
             name="email"
             {...register("email", {
+              required: true,
               pattern:
                 /^(([^<>()\[\]\.,;:\s@\”]+(\.[^<>()\[\]\.,;:\s@\”]+)*)|(\”.+\”))@(([^<>()[\]\.,;:\s@\”]+\.)+[^<>()[\]\.,;:\s@\”]{2,})$/,
             })}
           />
-          {errors.email?.type === "pattern" && (
-            <p>El email tiene un formato incorrecto</p>
+          {errors.email?.type === "required" && (
+            <Alert>{"El email es requerido!"}</Alert>
           )}
-        </div>
-        <div>
-          <label>Mensaje</label>
-          <textarea
-            name="message"
-            id="message"
-            cols="30"
-            rows="10"
-            {...register("message", {
-              required: true,
-            })}
-          ></textarea>
-        </div>
-        <input type="submit" value="Enviar Formulario" />
-
-        {/* <FormControl sx={{ height: "5rem" }}>
-          <InputLabel htmlFor="">Nombre</InputLabel>
-          <Input id="name" name="name" type="name" />
-        </FormControl>
-        <FormControl>
-          <InputLabel htmlFor="">Email</InputLabel>
-          <Input id="email" name="email" type="email" />
+          {errors.email?.type === "pattern" && (
+            <Alert>{"El formato del email es incorrecto!"}</Alert>
+          )}
         </FormControl>
         <FormControl>
           <TextField
-            sx={{ marginTop: "40px", height: "5rem" }}
-            placeholder="Mensaje"
-            type="text-area"
             name="message"
-          />
-          <Button variant="contained" sx={{ marginTop: "20px" }}>
-            Enviar Mensaje
-          </Button>
-        </FormControl> */}
+            id="message"
+            placeholder="Mensaje"
+            multiline
+            rows={5}
+            sx={{ marginTop: "40px" }}
+            {...register("message", {
+              required: true,
+            })}
+          ></TextField>
+          {errors.message?.type === "required" && (
+            <Alert>{"El mensaje es requerido!"}</Alert>
+          )}
+        </FormControl>
+        <Button
+          sx={{ marginTop: "20px", border: "1px solid #0e577e" }}
+          type="submit"
+        >
+          Enviar
+        </Button>
       </form>
     </Stack>
   );
