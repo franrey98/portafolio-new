@@ -84,7 +84,9 @@ const Form = () => {
             name="message"
             id="message"
             placeholder="Mensaje"
-            sx={{ marginTop: "40px", height: "5rem" }}
+            multiline
+            rows={5}
+            sx={{ marginTop: "40px" }}
             {...register("message", {
               required: true,
             })}
@@ -93,11 +95,12 @@ const Form = () => {
             <Alert>{"El mensaje es requerido!"}</Alert>
           )}
         </FormControl>
-        <Input
+        <Button
           sx={{ marginTop: "20px", border: "1px solid #0e577e" }}
           type="submit"
-          value="Enviar Formulario"
-        />
+        >
+          Enviar
+        </Button>
       </form>
     </Stack>
   );

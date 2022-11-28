@@ -24,7 +24,7 @@ const Footer = () => {
             color="white"
             alignSelf="center"
           >
-            © 2022 All Rights Reserved
+            © 2022 - Francisco Rey
           </Typography>
 
           <Stack
