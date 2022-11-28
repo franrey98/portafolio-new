@@ -48,7 +48,7 @@ const CardProfile = () => {
               fontWeight={"700"}
               fontSize="34px"
             >
-              Francisco Rey
+              Francisco Reya
             </Typography>
           </Stack>
         </Card>
