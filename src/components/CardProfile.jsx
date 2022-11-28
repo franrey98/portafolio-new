@@ -9,8 +9,10 @@ import {
   Card,
 } from "@mui/material";
 import { motion } from "framer-motion";
+import imgProfile from "../img/fotocv2.jpeg";
 
 const CardProfile = () => {
+  console.log(imgProfile);
   return (
     <Stack
       direction={{ md: "column", lg: "row" }}
@@ -39,7 +41,7 @@ const CardProfile = () => {
               width: "140px",
               height: "140px",
             }}
-            src="src\img\fotocv2.jpeg"
+            src={imgProfile}
             alt="algo"
           />
           <Stack>
@@ -48,7 +50,7 @@ const CardProfile = () => {
               fontWeight={"700"}
               fontSize="34px"
             >
-              Francisco Reya
+              Francisco Rey
             </Typography>
           </Stack>
         </Card>
