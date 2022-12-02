@@ -36,7 +36,11 @@ const Navbar = () => {
           gap={{ xs: "2rem", md: "15rem" }}
           padding="7px"
         >
-          <Stack direction={"row"} gap={"6rem"} alignItems="center">
+          <Stack
+            direction={"row"}
+            gap={{ xs: "2rem", md: "6rem" }}
+            alignItems="center"
+          >
             <Language />
             <Link
               style={buttonStyle}

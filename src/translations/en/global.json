@@ -31,5 +31,9 @@
     "cv": "see",
     "title": "Contact",
     "text-main": "If you reached this section and are interested in contacting me, I will leave you my contact email: reyfrancisco98@hotmail.com and my telephone number: (+15) 2216127834. You can also contact me through the following form:"
+  },
+  "language": {
+    "spanish": "Spanish",
+    "english": "english"
   }
 }

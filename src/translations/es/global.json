@@ -31,5 +31,9 @@
     "cv": "ver",
     "title": "Contacto",
     "text-main": "Si llegaste a esta seccion y estas interesado en contactarte conmigo, te dejare mi email de contacto: reyfrancisco98@hotmail.com y mi numero telefonico: (+15)2216127834. Tambien podes comunicarte conmigo a traves del siguiente formulario:"
+  },
+  "language": {
+    "spanish": "español",
+    "english": "ingles"
   }
 }

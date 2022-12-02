@@ -12,7 +12,7 @@ const Language = () => {
   };
 
   return (
-    <div>
+    <Stack alignItems="center">
       <button
         onClick={openModal}
         style={{ fontSize: "30px", border: "none", cursor: "pointer" }}
@@ -20,19 +20,27 @@ const Language = () => {
         <MdLanguage />
       </button>
       {modal && (
-        <Stack>
+        <Stack
+          position="absolute"
+          mt="2rem"
+          backgroundColor="#750370"
+          sx={{ borderRadius: "5px" }}
+        >
           <Button
-            sx={{ height: "5rem" }}
+            sx={{ height: "2.3rem", color: "white" }}
             onClick={() => i18n.changeLanguage("es")}
           >
-            Cambiar a español
+            {t("language.spanish")}
           </Button>
-          <Button onClick={() => i18n.changeLanguage("en")}>
-            Cambiar a ingles
+          <Button
+            sx={{ height: "2.3rem", color: "white" }}
+            onClick={() => i18n.changeLanguage("en")}
+          >
+            {t("language.english")}
           </Button>
         </Stack>
       )}
-    </div>
+    </Stack>
   );
 };
 
