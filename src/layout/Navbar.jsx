@@ -2,6 +2,8 @@ import { Stack, Button, Box, AppBar } from "@mui/material";
 import { Link } from "react-scroll";
 import { Fragment } from "react";
 import DrawerMenu from "../components/DrawerMenu";
+import { useTranslation } from "react-i18next";
+import Language from "../components/Language";
 
 const buttonStyle = {
   fontSize: "22px",
@@ -22,11 +24,12 @@ const buttonStyle = {
 };
 
 const Navbar = () => {
+  const [t, i18n] = useTranslation("global");
   return (
     <div id="navbar">
       <AppBar color="default">
         <Stack
-          mt={2}
+          mt={3}
           maxWidth={"1000px"}
           margin="0 auto"
           flexDirection="row"
@@ -34,6 +37,7 @@ const Navbar = () => {
           padding="7px"
         >
           <Stack direction={"row"} gap={"6rem"} alignItems="center">
+            <Language />
             <Link
               style={buttonStyle}
               smooth={true}
@@ -41,7 +45,7 @@ const Navbar = () => {
               duration={500}
               to="navbar"
             >
-              Portafolio
+              {t("navbar.portafolio")}
             </Link>
             <DrawerMenu />
           </Stack>
@@ -57,7 +61,7 @@ const Navbar = () => {
               duration={500}
               to="aboutus"
             >
-              Sobre Mi
+              {t("navbar.about")}
             </Link>
             <Link
               style={buttonStyle}
@@ -66,7 +70,7 @@ const Navbar = () => {
               duration={500}
               to="technology"
             >
-              Tecnologias
+              {t("navbar.technologies")}
             </Link>
             <Link
               style={buttonStyle}
@@ -75,7 +79,7 @@ const Navbar = () => {
               duration={500}
               to="projects"
             >
-              Proyectos
+              {t("navbar.projects")}
             </Link>
             <Link
               style={buttonStyle}
@@ -84,7 +88,7 @@ const Navbar = () => {
               duration={500}
               to="contact"
             >
-              Contacto
+              {t("navbar.contact")}
             </Link>
           </Stack>
         </Stack>

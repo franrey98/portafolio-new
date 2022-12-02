@@ -1,0 +1,35 @@
+{
+  "navbar": {
+    "portafolio": "Portafolio",
+    "about": "SobreMi",
+    "technologies": "Tecnologias",
+    "projects": "Projectos",
+    "contact": "Contacto"
+  },
+  "about-me": {
+    "title": "SOBRE MI",
+    "description": "Soy un desarrollador Front End, que arranco en febrero de 2021 como autodidacta. Probando distintos cursos, descubrí que esto era lo que me gustaba. Me encantó el desarrollo web así que me propuse seguir estudiándolo. En este tiempo de estudio, logre aprender HTML, CSS, JavaScript, Node, React y en herramientas como Git y GitHub para el control de versiones. Actualmente, me encuentro en búsqueda laboral, tengo un gran interés de mostrar las capacidades adquiridas en los distintos cursos que realice, y en los diversos trabajos grupales que concrete."
+  },
+  "data-interest": {
+    "title": "Datos de Interes",
+    "years": "¿Años?",
+    "current-residence": "¿Lugar de Nacimiento y Residencia actual?",
+    "availability": "¿Disponibilidad Horaria?"
+  },
+  "education": {
+    "experience": "EDUCACIÓN Y EXPERIENCIAS"
+  },
+  "technologies": {
+    "title": "Tecnologias",
+    "text-main": "Estas son las herramientas con las que trabaje y que mas utilizo diariamente"
+  },
+  "projects": {
+    "title": "Projectos",
+    "text-main": "Diversos trabajos tanto grupales como personales que he realizado hasta la fecha:"
+  },
+  "contact": {
+    "cv": "ver",
+    "title": "Contacto",
+    "text-main": "Si llegaste a esta seccion y estas interesado en contactarte conmigo, te dejare mi email de contacto: reyfrancisco98@hotmail.com y mi numero telefonico: (+15)2216127834. Tambien podes comunicarte conmigo a traves del siguiente formulario:"
+  }
+}

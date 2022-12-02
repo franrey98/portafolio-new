@@ -12,8 +12,10 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 import Form from "./Form";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const [t, i18n] = useTranslation("global");
   return (
     <>
       <Stack
@@ -40,7 +42,7 @@ const Contact = () => {
           variant="contained"
           href="https://onedrive.live.com/?cid=38E2E5E104DF5E08&id=38E2E5E104DF5E08%21109&parId=root&o=OneUp"
         >
-          Ver
+          {t("contact.cv")}
         </Button>
       </Stack>
       <Stack>
@@ -52,7 +54,7 @@ const Contact = () => {
           textAlign={"center"}
           color="primary.dark"
         >
-          Contacto
+          {t("contact.title")}
         </Typography>
         <Stack gap="2rem" alignItems={"center"}>
           <Box>
@@ -62,11 +64,7 @@ const Contact = () => {
               textAlign="center"
               mt={"15px"}
             >
-              Si llegaste a esta seccion y estas interesado en contactarte
-              conmigo, te dejare mi email de contacto:
-              reyfrancisco98@hotmail.com y mi numero telefonico:
-              (+15)2216127834. Tambien podes comunicarte conmigo a traves del
-              siguiente formulario:
+              {t("contact.text-main")}
             </Typography>
           </Box>
           <Form />

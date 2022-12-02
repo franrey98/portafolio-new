@@ -5,6 +5,7 @@ import petapp from "../img/petapp.png";
 import reactapp from "../img/reactapp.png";
 import todoapp from "../img/todoapp.png";
 import native from "../img/native.png";
+import { useTranslation } from "react-i18next";
 
 const infoCard = [
   {
@@ -38,6 +39,7 @@ const infoCard = [
 ];
 
 const Projects = () => {
+  const [t, i18n] = useTranslation("global");
   return (
     <Stack id="projects">
       <Typography
@@ -48,11 +50,10 @@ const Projects = () => {
         color="primary.main"
         borderBottom={"4px solid"}
       >
-        Proyectos
+        {t("projects.title")}
       </Typography>
       <Typography fontWeight="400" fontSize={"20px"} mt={"1.5rem"}>
-        Diversos trabajos tanto grupales como personales que he realizado hasta
-        la fecha:
+        {t("projects.text-main")}
       </Typography>
       <Grid container justifyContent={"space-around"} gap="1rem">
         <Grid item>
