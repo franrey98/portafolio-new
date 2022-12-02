@@ -7,6 +7,7 @@ import imgjs from "../img/js.png";
 import imggit from "../img/git.png";
 import imgreact from "../img/react.png";
 import imgnode from "../img/node.png";
+import { useTranslation } from "react-i18next";
 
 const imgTech = [
   {
@@ -31,6 +32,7 @@ const imgTech = [
 
 const Technology = () => {
   const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down("md"));
+  const [t, i18n] = useTranslation("global");
 
   return (
     <Stack id="technology">
@@ -41,11 +43,10 @@ const Technology = () => {
         mt={6}
         color="white"
       >
-        Tecnologias
+        {t("technologies.title")}
       </Typography>
       <Typography color="white" mt={"40px"}>
-        Estas son las herramientas con las que trabaje y que mas utilizo
-        diariamente
+        {t("technologies.text-main")}
       </Typography>
       {!isSmallScreen ? (
         <Stack

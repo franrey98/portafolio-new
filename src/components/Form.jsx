@@ -96,7 +96,14 @@ const Form = () => {
           )}
         </FormControl>
         <Button
-          sx={{ marginTop: "20px", border: "1px solid #0e577e" }}
+          sx={{
+            marginTop: "20px",
+            border: "1px solid #0e577e",
+            "&:hover": {
+              color: "white",
+              backgroundColor: "#0e577e",
+            },
+          }}
           type="submit"
         >
           Enviar

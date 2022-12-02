@@ -7,6 +7,9 @@ const ProjectCard = ({ infoCard }) => {
       sx={{
         width: "100%",
         height: "100%",
+        border: "2px solid ",
+        borderRadius: "5px",
+        borderColor: "#0e577e",
       }}
       alignItems="center"
       gap={3}
@@ -31,10 +34,32 @@ const ProjectCard = ({ infoCard }) => {
         {infoCard?.tech}
       </Typography>
       <Stack direction={"row"} gap={"14px"} justifyContent="center">
-        <Button variant="contained" href={infoCard?.github}>
+        <Button
+          sx={{
+            color: "#0e577e",
+            border: "1px solid #0e577e",
+            "&:hover": {
+              color: "white",
+              backgroundColor: "#0e577e",
+            },
+          }}
+          variant=""
+          href={infoCard?.github}
+        >
           Github
         </Button>
-        <Button variant="contained" href={infoCard?.url}>
+        <Button
+          sx={{
+            color: "#0e577e",
+            border: "1px solid #0e577e",
+            "&:hover": {
+              color: "white",
+              backgroundColor: "#0e577e",
+            },
+          }}
+          variant=""
+          href={infoCard?.url}
+        >
           Visitar
         </Button>
       </Stack>

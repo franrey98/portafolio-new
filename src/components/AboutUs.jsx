@@ -1,7 +1,9 @@
 import React from "react";
 import { Stack, Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 const AboutUs = () => {
+  const [t, i18n] = useTranslation("global");
   return (
     <Stack id="aboutus" mt={6}>
       <Typography
@@ -11,7 +13,7 @@ const AboutUs = () => {
         textAlign="center"
         color="primary.dark"
       >
-        Sobre Mi
+        {t("about-me.title")}
       </Typography>
       <Typography
         mt={2}
@@ -20,15 +22,7 @@ const AboutUs = () => {
         mr={{ xs: "0px", md: "190px" }}
         ml={{ xs: "0px", md: "190px" }}
       >
-        Soy un desarrollador Front End, que arranco en febrero de 2021 como
-        autodidacta. Probando distintos cursos, descubrí que esto era lo que me
-        gustaba. Me encantó el desarrollo web así que me propuse seguir
-        estudiándolo. En este tiempo de estudio, logre aprender HTML, CSS,
-        JavaScript, Node, React y en herramientas como Git y GitHub para el
-        control de versiones. Actualmente, me encuentro en búsqueda laboral,
-        tengo un gran interés de mostrar las capacidades adquiridas en los
-        distintos cursos que realice, y en los diversos trabajos grupales que
-        concrete.
+        {t("about-me.description")}
       </Typography>
       <Typography
         textTransform={"uppercase"}
@@ -39,7 +33,7 @@ const AboutUs = () => {
         borderColor="primary.main"
         mt={8}
       >
-        Datos de interes
+        {t("data-interest.title")}
       </Typography>
       <Stack
         direction={"row"}
@@ -54,7 +48,7 @@ const AboutUs = () => {
             color="primary.dark"
             textAlign={"center"}
           >
-            ¿Años?
+            {t("data-interest.years")}
           </Typography>
           <Typography
             fontWeight={"700"}
@@ -72,7 +66,7 @@ const AboutUs = () => {
             color="primary.dark"
             textAlign={"center"}
           >
-            ¿Lugar de Nacimiento y Residencia actual?
+            {t("data-interest.current-residence")}
           </Typography>
           <Typography
             fontWeight={"700"}
@@ -90,7 +84,7 @@ const AboutUs = () => {
             fontSize="22px"
             color="primary.dark"
           >
-            ¿Disponibilidad Horaria?
+            {t("data-interest.availability")}
           </Typography>
           <Typography
             fontWeight={"700"}
@@ -110,7 +104,7 @@ const AboutUs = () => {
         borderBottom={"2px solid"}
         mt={8}
       >
-        Educación y Experiencias
+        {t("education.experience")}
       </Typography>
       <Stack
         direction={"row"}

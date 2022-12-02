@@ -1,0 +1,39 @@
+{
+  "navbar": {
+    "portafolio": "Portafolio",
+    "about": "AboutMe",
+    "technologies": "Technologies",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "about-me": {
+    "title": "About Me",
+    "description": "I am a Front End developer, starting in February 2021 as a self-taught. Trying different courses, I discovered that this was what I liked. I loved web development so I decided to continue studying it. In this study time, I was able to learn HTML, CSS, JavaScript, Node, React, and tools like Git and GitHub for version control. Currently, I am looking for a job, I have a great interest in showing the abilities acquired in the different courses that I take, and in the various group works that I carry out."
+  },
+  "data-interest": {
+    "title": "Data of interest",
+    "years": "¿Years?",
+    "current-residence": "¿Place of Birth and Current Residence?",
+    "availability": "¿Time availability?"
+  },
+  "education": {
+    "experience": "EDUCATION AND EXPERIENCES"
+  },
+  "technologies": {
+    "title": "Technologies",
+    "text-main": "These are the tools with which I work and that I use the most on a daily basis"
+  },
+  "projects": {
+    "title": "Projects",
+    "text-main": "Various group and personal works that I have done to date:"
+  },
+  "contact": {
+    "cv": "see",
+    "title": "Contact",
+    "text-main": "If you reached this section and are interested in contacting me, I will leave you my contact email: reyfrancisco98@hotmail.com and my telephone number: (+15) 2216127834. You can also contact me through the following form:"
+  },
+  "language": {
+    "spanish": "Spanish",
+    "english": "english"
+  }
+}
