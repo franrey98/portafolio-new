@@ -6,20 +6,15 @@ import { useTranslation } from "react-i18next";
 import Language from "../components/Language";
 
 const buttonStyle = {
-  fontSize: "22px",
-  fontWeight: "400",
+  fontSize: "20px",
+  fontWeight: "500",
   textAlign: "center",
   textTransform: "uppercase",
   color: "black",
   cursor: "pointer",
   "&:hover": {
-    color: "primary.main",
-    backgroundColor: "transparent",
-    transition: "none",
-  },
-  "&:focus": {
-    color: "primary.main",
-    backgroundColor: "transparent",
+    color: "#eeeeee",
+    backgroundColor: "#e2d9cc",
   },
 };
 
@@ -27,14 +22,15 @@ const Navbar = () => {
   const [t, i18n] = useTranslation("global");
   return (
     <div id="navbar">
-      <AppBar color="default">
+      <AppBar color="">
         <Stack
           mt={3}
           maxWidth={"1000px"}
           margin="0 auto"
           flexDirection="row"
+          alignItems="center"
           gap={{ xs: "2rem", md: "15rem" }}
-          padding="7px"
+          padding="5px"
         >
           <Stack
             direction={"row"}

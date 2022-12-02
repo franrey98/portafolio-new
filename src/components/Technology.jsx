@@ -11,21 +11,27 @@ import { useTranslation } from "react-i18next";
 
 const imgTech = [
   {
+    name: "css",
     img: imgcss,
   },
   {
+    name: "HTML",
     img: imghtml,
   },
   {
+    name: "javascript",
     img: imgjs,
   },
   {
+    name: "react",
     img: imgreact,
   },
   {
+    name: "node",
     img: imgnode,
   },
   {
+    name: "git",
     img: imggit,
   },
 ];
@@ -52,9 +58,12 @@ const Technology = () => {
         <Stack
           direction={"row"}
           gap="4rem"
-          padding={"8px"}
+          padding={"25px"}
+          borderRadius="10px"
           justifyContent="space-between"
-          mt={"5rem"}
+          mt={"2rem"}
+          backgroundColor="white"
+          height="11rem"
         >
           <CardImg imgTech={imgTech[1]} />
           <CardImg imgTech={imgTech[0]} />

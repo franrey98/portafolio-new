@@ -7,9 +7,12 @@ const ProjectCard = ({ infoCard }) => {
       sx={{
         width: "100%",
         height: "100%",
-        border: "2px solid ",
-        borderRadius: "5px",
+        border: "1px solid ",
+        borderRadius: "20px",
         borderColor: "#0e577e",
+        backgroundColor: "#f5ede7",
+        boxShadow: " 2px 4px 10px 1px rgb(0 0 0 / 59%)",
+        overflow: "hidden",
       }}
       alignItems="center"
       gap={3}
@@ -20,6 +23,7 @@ const ProjectCard = ({ infoCard }) => {
         textTransform="uppercase"
         fontSize={"24px"}
         color="primary.main"
+        mt="2rem"
       >
         {infoCard?.name} App
       </Typography>
