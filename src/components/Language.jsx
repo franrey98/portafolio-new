@@ -24,7 +24,7 @@ const Language = () => {
           position="absolute"
           mt="2rem"
           backgroundColor="#750370"
-          sx={{ borderRadius: "5px" }}
+          sx={{ borderRadius: "2px" }}
         >
           <Button
             sx={{ height: "2.3rem", color: "white" }}
