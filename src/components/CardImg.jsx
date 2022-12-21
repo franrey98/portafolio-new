@@ -28,6 +28,7 @@ const CardImg = ({ imgTech }) => {
         <Typography
           fontWeight="700"
           sx={{ textTransform: "uppercase", textAlign: "center" }}
+          color={{ xs: "white", md: "black" }}
         >
           {imgTech.name}
         </Typography>

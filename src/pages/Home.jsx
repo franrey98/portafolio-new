@@ -34,7 +34,7 @@ const Home = () => {
         <Stack
           maxWidth={{ xs: "350px", sm: "600px", md: "1000px" }}
           margin="0 auto"
-          height="35rem"
+          height={{ xs: "50rem", md: "35rem" }}
           mt={4}
         >
           <Technology />
