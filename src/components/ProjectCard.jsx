@@ -29,7 +29,7 @@ const ProjectCard = ({ infoCard }) => {
       </Typography>
       <Stack sx={{ padding: "0px" }}>
         <img
-          style={{ width: "380px", height: "180px" }}
+          style={{ width: "400px", height: "180px" }}
           src={infoCard?.img}
           alt="imgprojects"
         />

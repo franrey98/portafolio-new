@@ -23,11 +23,11 @@ const infoCard = [
     url: "https://ecommerce-deportivo.netlify.app/",
   },
   {
-    name: "Todo List",
+    name: "Netflix",
     img: todoapp,
-    tech: "HTML - CSS - JAVASCRIPT",
-    github: "https://github.com/franrey98/Proyecto-para-portafolio-2",
-    url: "https://apptodorey.netlify.app/",
+    tech: "REACT - STYLED COMPONENTS - CONTEXT",
+    github: "https://github.com/franrey98/netflix-app",
+    url: "https://netflix-app-eta.vercel.app/",
   },
   {
     name: "Quickly",
