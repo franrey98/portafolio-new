@@ -2,7 +2,7 @@ import React from "react";
 import { Grid, Stack, Typography, Box, useMediaQuery } from "@mui/material";
 import ProjectCard from "./ProjectCard";
 import petapp from "../img/petapp.png";
-import reactapp from "../img/reactapp.png";
+import joblisting from "../img/job-listings.png";
 import todoapp from "../img/todoapp.png";
 import native from "../img/native.png";
 import { useTranslation } from "react-i18next";
@@ -16,11 +16,11 @@ const infoCard = [
     url: "https://petfinder-phi.vercel.app/",
   },
   {
-    name: "E-commerce",
-    img: reactapp,
-    tech: "REACT - TAILWIND - CONTEXT",
-    github: "https://github.com/franrey98/rey-app",
-    url: "https://ecommerce-deportivo.netlify.app/",
+    name: "JOB LISTINGS",
+    img: joblisting,
+    tech: "REACT - SASS - TYPESCRIPT",
+    github: "https://github.com/franrey98/job-listings",
+    url: "https://job-listings-git-dev-franrey98.vercel.app/",
   },
   {
     name: "Netflix",
