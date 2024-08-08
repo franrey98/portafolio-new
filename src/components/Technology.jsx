@@ -1,27 +1,12 @@
 import React from "react";
 import { Box, Grid, Stack, Typography, useMediaQuery } from "@mui/material";
 import CardImg from "./CardImg";
-import imgcss from "../img/css.png";
-import imghtml from "../img/html.png";
-import imgjs from "../img/js.png";
 import imggit from "../img/git.png";
 import imgreact from "../img/react.png";
 import imgnode from "../img/node.png";
 import { useTranslation } from "react-i18next";
 
 const imgTech = [
-  {
-    name: "css",
-    img: imgcss,
-  },
-  {
-    name: "HTML",
-    img: imghtml,
-  },
-  {
-    name: "javascript",
-    img: imgjs,
-  },
   {
     name: "react",
     img: imgreact,
@@ -57,20 +42,17 @@ const Technology = () => {
       {!isSmallScreen ? (
         <Stack
           direction={"row"}
-          gap="4rem"
+          gap="1rem"
           padding={"25px"}
           borderRadius="10px"
-          justifyContent="space-between"
+          justifyContent="space-around"
           mt={"2rem"}
           backgroundColor="white"
           height="11rem"
         >
-          <CardImg imgTech={imgTech[1]} />
           <CardImg imgTech={imgTech[0]} />
+          <CardImg imgTech={imgTech[1]} />
           <CardImg imgTech={imgTech[2]} />
-          <CardImg imgTech={imgTech[3]} />
-          <CardImg imgTech={imgTech[4]} />
-          <CardImg imgTech={imgTech[5]} />
         </Stack>
       ) : (
         <>

@@ -12,7 +12,6 @@ import { motion } from "framer-motion";
 import imgProfile from "../img/fotocv2.jpeg";
 
 const CardProfile = () => {
-  console.log(imgProfile);
   return (
     <Stack
       direction={{ md: "column", lg: "row" }}

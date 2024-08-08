@@ -56,7 +56,7 @@ const AboutUs = () => {
             color="primary.dark"
             textAlign={"center"}
           >
-            23
+            25
           </Typography>
         </Stack>
         <Stack>
@@ -120,7 +120,7 @@ const AboutUs = () => {
         </Stack>
         <Stack>
           <Typography fontWeight={"700"} fontSize="22px" color="primary.dark">
-            Coderhouse
+            Fansbury
           </Typography>
         </Stack>
         <Stack>

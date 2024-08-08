@@ -25,7 +25,7 @@ const Navbar = () => {
       <AppBar color="">
         <Stack
           mt={3}
-          maxWidth={"1000px"}
+          maxWidth={"1100px"}
           margin="0 auto"
           flexDirection="row"
           alignItems="center"

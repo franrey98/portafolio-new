@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import { motion } from "framer-motion";
 const CardImg = ({ imgTech }) => {
+  console.log("imgTech", imgTech);
   return (
     <motion.div
       whileHover={{ scale: [null, 1.3, 1.3] }}

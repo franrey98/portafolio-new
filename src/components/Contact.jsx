@@ -13,9 +13,21 @@ import {
 import { useState } from "react";
 import Form from "./Form";
 import { useTranslation } from "react-i18next";
+import Loading from "./Loading";
 
 const Contact = () => {
+  const [viewCV, setViewCV] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [t, i18n] = useTranslation("global");
+
+  const handleViewCV = () => {
+    setLoading(true);
+    setViewCV(!viewCV);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  };
+
   return (
     <>
       <Stack
@@ -40,12 +52,25 @@ const Contact = () => {
             color: "white",
           }}
           variant="contained"
-          href="https://onedrive.live.com/?cid=38E2E5E104DF5E08&id=38E2E5E104DF5E08%21109&parId=root&o=OneUp"
+          onClick={handleViewCV}
         >
           {t("contact.cv")}
         </Button>
       </Stack>
       <Stack>
+        {loading ? (
+          <Loading />
+        ) : (
+          viewCV && (
+            <iframe
+              src="https://onedrive.live.com/embed?resid=38E2E5E104DF5E08%21303&authkey=!AFOMau_n93AApcY&em=2"
+              width="100%"
+              height="1000rem"
+              frameBorder="0"
+              scrolling="no"
+            ></iframe>
+          )
+        )}
         <Typography
           textTransform={"uppercase"}
           fontWeight="700"
