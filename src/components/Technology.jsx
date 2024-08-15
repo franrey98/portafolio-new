@@ -1,9 +1,12 @@
 import React from "react";
 import { Box, Grid, Stack, Typography, useMediaQuery } from "@mui/material";
 import CardImg from "./CardImg";
-import imggit from "../img/git.png";
 import imgreact from "../img/react.png";
 import imgnode from "../img/node.png";
+import imgexpress from "../img/imgexpress.png";
+import imgts from "../img/imgts.png";
+import imgreactnative from "../img/imgreactnative.png";
+import imgmongodb from "../img/imgmongodb.png";
 import { useTranslation } from "react-i18next";
 
 const imgTech = [
@@ -12,12 +15,24 @@ const imgTech = [
     img: imgreact,
   },
   {
-    name: "node",
+    name: "React Native",
+    img: imgreactnative,
+  },
+  {
+    name: "Node",
     img: imgnode,
   },
   {
-    name: "git",
-    img: imggit,
+    name: "Express",
+    img: imgexpress,
+  },
+  {
+    name: "Typescript",
+    img: imgts,
+  },
+  {
+    name: "MongoDB",
+    img: imgmongodb,
   },
 ];
 
@@ -48,11 +63,15 @@ const Technology = () => {
           justifyContent="space-around"
           mt={"2rem"}
           backgroundColor="white"
+          alignItems={"center"}
           height="11rem"
         >
           <CardImg imgTech={imgTech[0]} />
           <CardImg imgTech={imgTech[1]} />
+          <CardImg imgTech={imgTech[4]} />
           <CardImg imgTech={imgTech[2]} />
+          <CardImg imgTech={imgTech[3]} />
+          <CardImg imgTech={imgTech[5]} />
         </Stack>
       ) : (
         <>

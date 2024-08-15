@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 import petapp from "../img/petapp.png";
 import joblisting from "../img/job-listings.png";
 import todoapp from "../img/todoapp.png";
-import native from "../img/native.png";
+import gymapp from "../img/imggymapp.png";
 import { useTranslation } from "react-i18next";
 
 const infoCard = [
@@ -30,11 +30,11 @@ const infoCard = [
     url: "https://netflix-app-eta.vercel.app/",
   },
   {
-    name: "Quickly",
-    img: native,
+    name: "Gym",
+    img: gymapp,
     tech: "REACT NATIVE - EXPO ",
-    github: "https://github.com/franrey98/c6-30-ft-pern-1",
-    url: "https://github.com/franrey98/c6-30-ft-pern-1",
+    github: "https://github.com/franrey98/gymApp",
+    url: "https://www.linkedin.com/posts/francisco-rey-71060419a_react-reactnative-frontend-activity-7064314365306429440-iuBc?utm_source=share&utm_medium=member_desktop",
   },
 ];
 

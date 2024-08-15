@@ -10,7 +10,6 @@ import {
 } from "@mui/material";
 import { motion } from "framer-motion";
 const CardImg = ({ imgTech }) => {
-  console.log("imgTech", imgTech);
   return (
     <motion.div
       whileHover={{ scale: [null, 1.3, 1.3] }}
@@ -26,13 +25,6 @@ const CardImg = ({ imgTech }) => {
           }}
           alt="img"
         />
-        <Typography
-          fontWeight="700"
-          sx={{ textTransform: "uppercase", textAlign: "center" }}
-          color={{ xs: "white", md: "black" }}
-        >
-          {imgTech.name}
-        </Typography>
       </Box>
     </motion.div>
   );
